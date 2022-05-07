@@ -1,0 +1,24 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+.Navbar_title {
+    font-size: 3.5rem;
+    transform: rotate(-2deg);
+    letter-spacing: 2px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px; 
+    border-radius: 3px;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.577);
+    width: 70%;
+}

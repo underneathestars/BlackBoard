@@ -1,0 +1,72 @@
+.NoteWrapper {
+    display: flex;
+}
+
+.NoteMessage {
+    transform: rotate(1deg);
+    display: flex;
+    resize: none;
+    text-align: justify;
+    background-color: transparent;
+    padding: 0.7rem;
+    border-top-left-radius: 10px 8px;
+    border-top-right-radius: 30px 10px;
+    border-bottom-right-radius: 10px 30px;
+    border-bottom-left-radius: 8px 30px;
+    border: solid 3px aliceblue;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin: 2% auto;
+    overflow: auto;
+    outline: none;
+}
+
+::-webkit-scrollbar { 
+    width: 10px;
+    }
+
+.NoteMessage:focus {
+    border: solid;
+}
+
+.NotePrinted {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.NotePrinted p {
+
+    border-radius: 10px;
+    position: relative;
+    font-size: 20px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.081);
+    width: 300px;
+    height: fit-content;
+    max-height: 500px;
+    padding: 2%;
+    margin: 20px;
+    overflow: auto;
+}
+
+.NotePrinted .NoteX {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 1.3rem;
+    right: 0;
+    top: 0;
+    margin: 2px 5px;
+    padding: 5px;
+}
+
+.NotePrinted .NoteX:hover {
+
+    color:coral;
+    cursor: pointer;
+}
