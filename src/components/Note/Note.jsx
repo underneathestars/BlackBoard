@@ -1,22 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { POST, GET, DELETE } from "../Utils/Utils";
 import "./Note.css";
 
 export const Note = () => {
   const [message, setMessage] = useState([]);
   const [note, setNote] = useState("");
 
-  function createNote() {
-    setMessage((oldMessage) => {
-      setNote("");
-      return [...oldMessage, note];
-    });
-  }
+    useEffect(() => {
+        GET().then((data) => setMessage(data));
+        }, []);
 
-  function checkForEnterKey(e) {
-    if (e.keyCode === 13) {
-      createNote();
+    function createNote() {
+        POST({note});
+        setNote("");
+      //window.location.reload();   
+    };
+
+    function deleteNote(id) {
+        DELETE(id);
+        window.location.reload();
     }
-  }
+
+    function checkForEnterKey(e) {
+      if (e.keyCode === 13) {
+        createNote();
+      }
+    };
 
   return (
     <div className="NoteMainWrapper">
@@ -41,8 +50,8 @@ export const Note = () => {
       <div className="NotePrinted">
         {message.map((singlenote, index) => (
           <p key={index}>
-            <button className="NoteX">X</button>
-            {singlenote}
+            <button onClick={() => deleteNote(singlenote.id)} className="NoteX">X</button>
+            {singlenote.note}
           </p>
         ))}
       </div>

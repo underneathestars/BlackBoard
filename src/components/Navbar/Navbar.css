@@ -1,13 +1,23 @@
 .Navbar {
+    position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     margin: 1%;
 }
 
 .Navbar_title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    margin-top: 10px;
     transform: rotate(-2deg);
     letter-spacing: 2px;
+}
+
+img {
+    transform: rotate(-20deg);
+    width: 10%;
+    max-width: 120px;
+    margin-right: 2%;;
 }
 
 hr {
