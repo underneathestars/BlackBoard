@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BlackBoard/static/css/main.26ccc90f.css",
+    "main.js": "/BlackBoard/static/js/main.be7863cb.js",
+    "index.html": "/BlackBoard/index.html",
+    "main.26ccc90f.css.map": "/BlackBoard/static/css/main.26ccc90f.css.map",
+    "main.be7863cb.js.map": "/BlackBoard/static/js/main.be7863cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26ccc90f.css",
+    "static/js/main.be7863cb.js"
+  ]
+}
