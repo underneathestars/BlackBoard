@@ -13,7 +13,7 @@ export const Note = () => {
     function createNote() {
         POST({note});
         setNote("");
-      //window.location.reload();   
+      window.location.reload();   
     };
 
     function deleteNote(id) {
